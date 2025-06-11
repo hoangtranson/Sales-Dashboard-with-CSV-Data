@@ -12,7 +12,7 @@ Build a basic data warehouse with ETL pipeline using sales data from CSVs.
 ## 📝 Implementation Steps
 
 ### 1. Data Acquisition
-- Download dummy sales data (e.g., Kaggle's Sales Dataset)
+- Download dummy sales data (e.g., Kaggle's Sales Dataset) https://www.kaggle.com/datasets/rajeshrampure/black-friday-sale
 
 ### 2. ETL Pipeline (Node.js)
 - Parse CSV using csv-parser
