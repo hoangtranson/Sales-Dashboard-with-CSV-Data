@@ -11,6 +11,20 @@ Build a basic data warehouse with ETL pipeline using sales data from CSVs.
 
 ## 📝 Implementation Steps
 
+
+Run Metabase
+
+```
+brew install openjdk@21
+
+sudo ln -sfn /opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk-21.jdk
+
+echo 'export PATH="/opt/homebrew/opt/openjdk@21/bin:$PATH"' >> ~/.zshrc
+source ~/.zshrc
+
+MB_JETTY_PORT=3001 java -jar metabase.jar
+```
+
 ### 1. Data Acquisition
 - Download dummy sales data (e.g., Kaggle's Sales Dataset) https://www.kaggle.com/datasets/rajeshrampure/black-friday-sale
 

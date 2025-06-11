@@ -29,6 +29,19 @@ CREATE TABLE IF NOT EXISTS raw_sales (
   purchase_amount DECIMAL(10,2)
 );`;
 
+// Drop existing table
+const dropTableQuery = `DROP TABLE IF EXISTS raw_sales;`;
+
+async function dropTable() {
+  try {
+    await pool.query(dropTableQuery);
+    console.log('Existing table dropped successfully');
+  } catch (err) {
+    console.error('Error dropping table:', err);
+    process.exit(1);
+  }
+}
+
 async function createTable() {
   try {
     await pool.query(createTableQuery);
@@ -97,6 +110,7 @@ async function loadData() {
 
 async function main() {
   try {
+    // await dropTable();
     await createTable();
     await loadData();
     console.log('ETL process completed successfully');
