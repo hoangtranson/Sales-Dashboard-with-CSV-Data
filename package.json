@@ -1,0 +1,15 @@
+{
+  "name": "sales-dashboard-etl",
+  "version": "1.0.0",
+  "description": "ETL pipeline for Black Friday Sales data warehouse",
+  "main": "src/etl.js",
+  "scripts": {
+    "start": "node src/etl.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "csv-parser": "^3.0.0",
+    "pg": "^8.11.3",
+    "dotenv": "^16.3.1"
+  }
+} 

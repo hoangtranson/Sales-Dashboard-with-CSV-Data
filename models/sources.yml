@@ -1,0 +1,34 @@
+version: 2
+
+sources:
+  - name: raw
+    database: sales_warehouse
+    schema: public
+    tables:
+      - name: raw_sales
+        description: Raw sales data from Black Friday dataset
+        columns:
+          - name: user_id
+            description: Unique identifier for the customer
+          - name: product_id
+            description: Unique identifier for the product
+          - name: gender
+            description: Customer's gender
+          - name: age
+            description: Customer's age group
+          - name: occupation
+            description: Customer's occupation code
+          - name: city_category
+            description: City category (A, B, or C)
+          - name: stay_in_current_city_years
+            description: Number of years customer has stayed in current city
+          - name: marital_status
+            description: Customer's marital status (0 or 1)
+          - name: product_category_1
+            description: First product category
+          - name: product_category_2
+            description: Second product category
+          - name: product_category_3
+            description: Third product category
+          - name: purchase_amount
+            description: Purchase amount in dollars 
