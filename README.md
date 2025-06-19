@@ -11,6 +11,16 @@ Build a basic data warehouse with ETL pipeline using sales data from CSVs.
 
 ## 📝 Implementation Steps
 
+EDT
+
+```
+python3 -m venv dbt-env
+pip install dbt-postgres
+dbt debug
+
+source dbt-env/bin/activate
+dbt run
+```
 
 Run Metabase
 
